@@ -1,9 +1,13 @@
 ---
-title: "Week 1 Handout: Basic R"
-author: "Z620: Quantitative Biodiversity, Indiana University"
+title: 'Week 1 Handout: Basic R'
+author: 'Z620: Quantitative Biodiversity, Indiana University'
 date: "January 16, 2015"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 geometry: margin=2.54cm
+urlcolor: blue
 ---
 
 ## OVERVIEW
@@ -32,7 +36,7 @@ getwd()
 Use the following command to change your directory (but note that you will need to modify to reflect _your_ actual directory):
 
 ```{r}
-setwd("~/GitHub/QuantitativeBiodiversity/QB-2017/Week1")
+setwd("~/GitHub/QB-2017/Week1")
 ```
 
 ## 2) WORKING WITH MATRICES
@@ -187,7 +191,8 @@ cor1 <- cor(meso.num)
 
 ### C. Loading Contributed Packages
 The base package in R won't always meet all of our needs. 
-This is why there are > 6,000 **contributed packages** that have been developed for R. 
+This is why there are [> 13,000](https://cran.r-project.org/web/packages/) **contributed packages** that have been developed for R. 
+
 This may seem overwhelming, but it also means that there are tools (and web support) for just about any problem you might encounter.  
 
 When using one of the contributed packages, the first thing we need to do is **install** them along with their dependencies (i.e., other required packages). 
